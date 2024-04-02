@@ -1,10 +1,14 @@
 # Week 3
 
+#### Give voting token to a user
+
 ```
 npx ts-node --files ./scripts/GiveVotingTokens.ts 0x23F7810F801B265Aaf9106596bE3B750CCe9DB92 0x996A5ed069A393F0b25A08f3212F619D801bA110 20
 ```
 
 Tx hash: `0x6c7be109a7a7e27e2b65fe101731f70b036742b85082658ab42ec53c53e7e502`
+
+#### Deploy TokenizedBallot contract
 
 ```
 npx ts-node --files ./scripts/DeployBallotContract.ts 0x23F7810F801B265Aaf9106596bE3B750CCe9DB92 5606297 chocolate vanilla potato strawberry onion
@@ -12,7 +16,7 @@ npx ts-node --files ./scripts/DeployBallotContract.ts 0x23F7810F801B265Aaf910659
 
 TokenizedBallot contract deployed to: `0x4fc2e79612edd73a315666d9afb05fd88e19659d` Transaction hash: `0x29c609984c18e370bcf4c795dd0d875eb6d6c3c8e43b56416f2dea8d8d6d7b28`
 
-Delegate:
+#### Delegate voting power to another user
 
 ```
 npx ts-node --files ./scripts/DelegateToken.ts 0x23F7810F801B265Aaf9106596bE3B750CCe9DB92 0x996A5ed069A393F0b25A08f3212F619D801bA110
